@@ -191,7 +191,7 @@ def find_eye_center(img):
     return x,y
 
 
-img = cv2.imread('eyeold.jpg',0)
+img = cv2.imread('eye.jpg',0)
 center = find_eye_center(img)
 cv2.circle(img, center, 5, (255,0,0))
 cv2.imshow('final', img)
